@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deneme.myapplication.MainActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="30dp">
+        <TextView
+            android:id="@+id/denemetext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="98dp"
+
+            tools:layout_editor_absoluteY="253dp">
+
+
+        </TextView>
+        </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="30pt"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="3pt"
+        android:orientation="horizontal">
+
+
+
+
+        <Button
+            android:id="@+id/deneme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp"
+            android:text="1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="153dp" />
+        <Button
+            android:id="@+id/deneme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="270dp"
+            tools:layout_editor_absoluteY="153dp" />
+        <Button
+            android:id="@+id/deneme3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="270dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="30pt"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="3pt"
+        android:orientation="horizontal"
+    tools:ignore="MissingConstraints">
+
+    <Button
+        android:id="@+id/deneme4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+        android:text="4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="138dp" />
+    <Button
+        android:id="@+id/deneme5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="138dp" />
+    <Button
+        android:id="@+id/deneme6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="138dp" />
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="64dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginLeft="30pt"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/deneme7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="7"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp" />
+        <Button
+            android:id="@+id/deneme8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="8"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp" />
+        <Button
+            android:id="@+id/deneme9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="0.55"
+            android:text="9"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp" />
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="128dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginLeft="30pt"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/denemearti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="+"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp" />
+        <Button
+            android:id="@+id/deneme0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp" />
+        <Button
+            android:id="@+id/denemeeksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="-"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="30pt"
+        tools:layout_editor_absoluteY="200dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/denemecarpim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="*"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp"
+            />
+        <Button
+            android:id="@+id/denemebolme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="/"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp"
+            />
+
+        <Button
+            android:id="@+id/denemeesittir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="="
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="138dp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="128dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginLeft="30pt"
+        tools:ignore="MissingConstraints">
+
+    <Button
+        android:id="@+id/denemetemizle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_weight="0.780"
+        android:text="temizle"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="138dp"
+        />
+    </LinearLayout>
+ </LinearLayout>
+</android.support.constraint.ConstraintLayout>

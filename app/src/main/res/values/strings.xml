@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="buton">buton</string>
+    <string name="button">Button</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="button4">Button</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="buton2">buton2</string>
+    <string name="buton3">buton3</string>
+    <string name="butom1">1</string>
+</resources>
