@@ -1,43 +1,48 @@
 package com.example.deneme.myapplication;
 
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button temizle;
-    Button deneme,deneme2,deneme3,deneme4,deneme5,deneme6,deneme7,deneme8,deneme9,deneme0,esit,toplama,carpim,bolme,cikarma;
-    TextView t;
-    String a=null;
-    String b=null;
-    String c=null;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0,esit,toplama,carpim,bolme,cikarma;
+    TextView t; //sayilarin veya sonucun goruntulendigi textview
+    String a=null; //ilk degeri tutan degisken
+    String b=null; //hesaplamada kullanilan degisken
+    String c=null; //hesaplamanin türünü tutan degisken
     int sonuc = 0;
-    int f = 0;
+    int temp = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        deneme = (Button)findViewById(R.id.deneme);
-        deneme2 = (Button)findViewById(R.id.deneme2);
-        deneme3 = (Button)findViewById(R.id.deneme3) ;
-        deneme4 = (Button)findViewById(R.id.deneme4);
-        deneme5 = (Button)findViewById(R.id.deneme5);
-        deneme6 = (Button)findViewById(R.id.deneme6) ;
-        deneme7 = (Button)findViewById(R.id.deneme7);
-        deneme8 = (Button)findViewById(R.id.deneme8);
-        deneme9 = (Button)findViewById(R.id.deneme9) ;
-        deneme0 = (Button)findViewById(R.id.deneme0) ;
-        esit = (Button)findViewById(R.id.denemeesittir);
-        toplama = (Button)findViewById(R.id.denemearti);
-        cikarma = (Button)findViewById(R.id.denemeeksi);
-        carpim = (Button)findViewById(R.id.denemecarpim);
-        bolme = (Button)findViewById(R.id.denemebolme);
-        temizle = (Button) findViewById(R.id.denemetemizle);
+        btn1 = (Button)findViewById(R.id.btn1);
+        btn2 = (Button)findViewById(R.id.btn2);
+        btn3 = (Button)findViewById(R.id.btn3) ;
+        btn4 = (Button)findViewById(R.id.btn4);
+        btn5 = (Button)findViewById(R.id.btn5);
+        btn6 = (Button)findViewById(R.id.btn6) ;
+        btn7 = (Button)findViewById(R.id.btn7);
+        btn8 = (Button)findViewById(R.id.btn8);
+        btn9 = (Button)findViewById(R.id.btn9) ;
+        btn0 = (Button)findViewById(R.id.btn0) ;
+        esit = (Button)findViewById(R.id.btnesittir);
+        toplama = (Button)findViewById(R.id.btnarti);
+        cikarma = (Button)findViewById(R.id.btneksi);
+        carpim = (Button)findViewById(R.id.btncarpim);
+        bolme = (Button)findViewById(R.id.btnbolme);
+        temizle = (Button) findViewById(R.id.btntemizle);
         t = (TextView) findViewById(R.id.denemetext);
-        deneme.setOnClickListener(new View.OnClickListener()
+
+
+        btn1.setOnClickListener(new View.OnClickListener()
         {
 
             @Override
@@ -45,18 +50,18 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme.getText().toString();
+                    a = btn1.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme.getText().toString();
+                    a = a + btn1.getText().toString();
                     t.setText(a);
                 }
 
             }
         });
-        deneme2.setOnClickListener(new View.OnClickListener()
+        btn2.setOnClickListener(new View.OnClickListener()
         {
 
             @Override
@@ -64,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme2.getText().toString();
+                    a = btn2.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme2.getText().toString();
+                    a = a + btn2.getText().toString();
                     t.setText(a);
                 }
 
@@ -77,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        deneme3.setOnClickListener(new View.OnClickListener()
+        btn3.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -85,52 +90,34 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme3.getText().toString();
+                    a = btn3.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme3.getText().toString();
+                    a = a + btn3.getText().toString();
                     t.setText(a);
                 }
             }
         });
-        deneme4.setOnClickListener(new View.OnClickListener()
+        btn4.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 if(a==null)
                 {
-                    a = deneme4.getText().toString();
+                    a = btn4.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme4.getText().toString();
+                    a = a + btn4.getText().toString();
                     t.setText(a);
                 }
             }
         });
-        deneme5.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-
-                if(a==null)
-                {
-                    a = deneme5.getText().toString();
-                    t.setText(a);
-                }
-                else
-                {
-                    a = a + deneme5.getText().toString();
-                    t.setText(a);
-                }
-            }
-        });
-        deneme6.setOnClickListener(new View.OnClickListener()
+        btn5.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -138,17 +125,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme6.getText().toString();
+                    a = btn5.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme6.getText().toString();
+                    a = a + btn5.getText().toString();
                     t.setText(a);
                 }
             }
         });
-        deneme7.setOnClickListener(new View.OnClickListener()
+        btn6.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -156,17 +143,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme7.getText().toString();
+                    a = btn6.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme7.getText().toString();
+                    a = a + btn6.getText().toString();
                     t.setText(a);
                 }
             }
         });
-        deneme8.setOnClickListener(new View.OnClickListener()
+        btn7.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -174,17 +161,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme8.getText().toString();
+                    a = btn7.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme8.getText().toString();
+                    a = a + btn7.getText().toString();
                     t.setText(a);
                 }
             }
         });
-        deneme9.setOnClickListener(new View.OnClickListener()
+        btn8.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -192,17 +179,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme9.getText().toString();
+                    a = btn8.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme9.getText().toString();
+                    a = a + btn8.getText().toString();
                     t.setText(a);
                 }
             }
         });
-        deneme0.setOnClickListener(new View.OnClickListener()
+        btn9.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -210,12 +197,30 @@ public class MainActivity extends AppCompatActivity {
 
                 if(a==null)
                 {
-                    a = deneme0.getText().toString();
+                    a = btn9.getText().toString();
                     t.setText(a);
                 }
                 else
                 {
-                    a = a + deneme0.getText().toString();
+                    a = a + btn9.getText().toString();
+                    t.setText(a);
+                }
+            }
+        });
+        btn0.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+
+                if(a==null)
+                {
+                    a = btn0.getText().toString();
+                    t.setText(a);
+                }
+                else
+                {
+                    a = a + btn0.getText().toString();
                     t.setText(a);
                 }
             }
@@ -277,75 +282,80 @@ public class MainActivity extends AppCompatActivity {
 
         ) {
             @Override
-            public void onClick(View v) {
-                t.setText("");
-                f = 0;
+            public void onClick(View v) { //hesaplamanin sifirlanmasi icin kullanici temizle butonuna tiklar
+                t.setText(""); //aksi halde islem kaldigi yerden devam edecegi icin sonuc dogru hesaplanmaz
+                temp = 0;
                 sonuc = 0;
                 a = null;
                 b =null;
                 c = null;
+                //butun degiskenler sifirlanir
             }
         });
+
         esit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch(c)
-                {
-                    case "toplama":
-                        if(f!=0)
-                        {
-                            sonuc = f + Integer.parseInt(t.getText().toString());
+                try {
+                    switch (c) {
+                        case "toplama":
+                            if (temp != 0) {
+                                sonuc = temp + Integer.parseInt(t.getText().toString());//eger herhangi islem bir kere bile yapilmis ise eski sonuca gore hesaplama yapilir
 
-                        }
-                        else
-                        {
-                            sonuc = Integer.parseInt(b) + Integer.parseInt(t.getText().toString());
-                        }
+                            } else {
+                                sonuc = Integer.parseInt(b) + Integer.parseInt(t.getText().toString());
+                            }
 
-                        break;
-                    case "cikarma":
-                        if(f!=0)
-                        {
-                            sonuc = f - Integer.parseInt(t.getText().toString());
+                            break;
+                        case "cikarma":
+                            if (temp != 0) {
+                                sonuc = temp - Integer.parseInt(t.getText().toString());
 
-                        }
-                        else
-                        {
-                            sonuc = Integer.parseInt(b)-Integer.parseInt(t.getText().toString());
-                        }
-                        break;
-                    case "carpim":
-                        if(f!=0)
-                        {
-                            sonuc = f*Integer.parseInt(t.getText().toString());
+                            } else {
+                                sonuc = Integer.parseInt(b) - Integer.parseInt(t.getText().toString());
+                            }
+                            break;
+                        case "carpim":
+                            if (temp != 0) {
+                                sonuc = temp * Integer.parseInt(t.getText().toString());
 
-                        }
-                        else{
-                            sonuc = Integer.parseInt(b)*Integer.parseInt(t.getText().toString());
+                            } else {
+                                sonuc = Integer.parseInt(b) * Integer.parseInt(t.getText().toString());
 
-                        }
-                        break;
-                    case "bolme":
-                        if(f!=0)
-                        {
-                            sonuc = f/Integer.parseInt(t.getText().toString());
+                            }
+                            break;
+                        case "bolme":
+                            if (temp != 0) {
+                                sonuc = temp / Integer.parseInt(t.getText().toString());
 
-                        }
-                        else{
-                            sonuc = Integer.parseInt(b)/Integer.parseInt(t.getText().toString());
-                        }
-                        break;
-                }
+                            } else {
+                                sonuc = Integer.parseInt(b) / Integer.parseInt(t.getText().toString());
+                            }
+                            break;
+                    }
+                    }
+                    catch(ArithmeticException e)
+                    {
+                        //kullanici ornegin 0`a bolme gibi bir hata yaparsa karsisina boyle enteresan bir uyari cikacaktir :).
+                        Toast toast = Toast.makeText(getApplicationContext(),"Matematiksel hata var,farkli sayilar deneyerek devam ediniz:)",Toast.LENGTH_LONG);
+                        toast.show();
+                        e.printStackTrace();
+                    }
+
+                    catch(Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+
 
 
                 t.setText(String.valueOf(sonuc));
-                f = sonuc;
-                a = null;
+                temp = sonuc;//sonucun son degeri islem yapilacak gecici bir degiskene atilir ve bu temp uzerinden
+                a = null;    //isleme devam edilir
                 sonuc = 0;
 
             }
         });
     }
-
 
 }

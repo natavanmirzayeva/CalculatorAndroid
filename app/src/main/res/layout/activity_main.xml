@@ -52,7 +52,7 @@
 
 
         <Button
-            android:id="@+id/deneme"
+            android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -62,7 +62,7 @@
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="153dp" />
         <Button
-            android:id="@+id/deneme2"
+            android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -71,7 +71,7 @@
             tools:layout_editor_absoluteX="270dp"
             tools:layout_editor_absoluteY="153dp" />
         <Button
-            android:id="@+id/deneme3"
+            android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -100,7 +100,7 @@
     tools:ignore="MissingConstraints">
 
     <Button
-        android:id="@+id/deneme4"
+        android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -111,7 +111,7 @@
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="138dp" />
     <Button
-        android:id="@+id/deneme5"
+        android:id="@+id/btn5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -121,7 +121,7 @@
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="138dp" />
     <Button
-        android:id="@+id/deneme6"
+        android:id="@+id/btn6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -142,7 +142,7 @@
         tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/deneme7"
+            android:id="@+id/btn7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -152,7 +152,7 @@
             tools:layout_editor_absoluteX="49dp"
             tools:layout_editor_absoluteY="138dp" />
         <Button
-            android:id="@+id/deneme8"
+            android:id="@+id/btn8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -162,7 +162,7 @@
             tools:layout_editor_absoluteX="49dp"
             tools:layout_editor_absoluteY="138dp" />
         <Button
-            android:id="@+id/deneme9"
+            android:id="@+id/btn9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -184,7 +184,7 @@
         tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/denemearti"
+            android:id="@+id/btnarti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -194,7 +194,7 @@
             tools:layout_editor_absoluteX="49dp"
             tools:layout_editor_absoluteY="138dp" />
         <Button
-            android:id="@+id/deneme0"
+            android:id="@+id/btn0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -204,7 +204,7 @@
             tools:layout_editor_absoluteX="49dp"
             tools:layout_editor_absoluteY="138dp" />
         <Button
-            android:id="@+id/denemeeksi"
+            android:id="@+id/btneksi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -222,7 +222,7 @@
         tools:layout_editor_absoluteX="16dp"
         tools:ignore="MissingConstraints">
         <Button
-            android:id="@+id/denemecarpim"
+            android:id="@+id/btncarpim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -232,7 +232,7 @@
             tools:layout_editor_absoluteY="138dp"
             />
         <Button
-            android:id="@+id/denemebolme"
+            android:id="@+id/btnbolme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -244,7 +244,7 @@
             />
 
         <Button
-            android:id="@+id/denemeesittir"
+            android:id="@+id/btnesittir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -268,7 +268,7 @@
         tools:ignore="MissingConstraints">
 
     <Button
-        android:id="@+id/denemetemizle"
+        android:id="@+id/btntemizle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
